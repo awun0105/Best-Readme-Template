@@ -11,42 +11,76 @@ AGENT EXECUTION PROTOCOL:
 
 # Architecture
 
-**[Project Title / Name]** is structured as a **[e.g., microservices, monolithic, multi-agent]** system. It utilizes **[Service 1]** for **[Purpose]**, **[Database 1]** for **[Purpose]**, and **[Protocol]** for communication.
+**[Project Title / Name]** is a **[e.g., single Python service with a separate background worker]**. It exposes **[e.g., FastAPI routes and a Gradio UI]**, uses **[e.g., a fine-tuned CLIP model]** for embeddings, stores vectors in **[e.g., Qdrant]**, stores binaries in **[e.g., MinIO]**, and uses **[e.g., Redis/RQ]** for durable background jobs.
 
 ## High-Level Diagram
 
-*Insert a Mermaid diagram or an image link here.*
+*Provide a visual overview of how clients interact with services and storage.*
 
 ```mermaid
 flowchart TB
-    Client --> API
-    API --> Service
-    Service --> Storage
+    subgraph Clients["Clients"]
+        UI["User Interface"]
+        APIClient["API Client"]
+    end
+
+    subgraph API["Main Application"]
+        Routes["Routes / Controllers"]
+        Services["Core Logic / Services"]
+    end
+
+    subgraph Storage["Stateful Services"]
+        DB[("Primary Database")]
+        Vector[("Vector Store")]
+        Blob[("Object Storage")]
+    end
+
+    UI --> Routes
+    APIClient --> Routes
+    Routes --> Services
+    Services --> DB
+    Services --> Vector
+    Services --> Blob
 ```
 
 ## Architectural Style
 
 **[MANDATORY]**
-*Explain the design pattern (e.g., MVC, Service-Oriented, Hexagonal).*
+*Explain the design pattern and layering strategy.*
 
 | Layer | Responsibility |
 |---|---|
-| **[Layer Name]** | [Responsibility Description] |
+| **API / UI** | [e.g., HTTP routes, request validation, UI components] |
+| **Core Services** | [e.g., Business logic, model inference, orchestration] |
+| **Storage Adapters** | [e.g., Database wrappers, object store clients] |
+
+### Runtime Object Lifetime
+
+**[OPTIONAL / RECOMMENDED]**
+*Explain how stateful objects (clients, models, settings) are managed across the application lifecycle.*
 
 ## Component Responsibilities
 
-### [Component 1 Name]
+### [Component 1 Name, e.g., FastAPI Application]
 **[MANDATORY]**
-*Explain what this specific part of the system does and its security/logic boundaries.*
+*Detail the boundaries and responsibilities of this component (e.g., validation, auth, metrics).*
 
-### [Component 2 Name]
+### [Component 2 Name, e.g., Background Worker]
 **[OPTIONAL]**
-*Explain secondary components.*
+*Detail secondary or background processes.*
 
-## Runtime Object Lifetime
+## Deployment Shapes
 
-**[OPTIONAL]**
-*Explain how state is managed, singletons, or process lifetimes.*
+### Local Development
+*Describe the stack during local work (e.g., local process + Docker dependencies).*
+
+### Production
+*Describe the production topology (e.g., Docker Compose stack, Kubernetes pods).*
+
+## Known Tradeoffs
+
+**[RECOMMENDED]**
+*Acknowledge any deliberate design decisions and their limitations (e.g., "Simplicity over extreme scalability").*
 
 ---
 
