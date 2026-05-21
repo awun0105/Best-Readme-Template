@@ -1,12 +1,18 @@
 <!-- 
-BẢN MẪU DANH MỤC TÀI LIỆU TIẾNG VIỆT
-===================================
-Trọng tâm: Hướng dẫn chi tiết và bản đồ từng tệp cho bộ tài liệu tiếng Việt.
+BẢN MẪU TÀI LIỆU: Danh mục Tiếng Việt
+====================================
+Trọng tâm: Lộ trình chi tiết và bản đồ từng tệp cho bộ tài liệu tiếng Việt.
 
-GIAO THỨC THỰC THI CHO AGENT:
-1. Thu thập ngữ cảnh về các tệp tài liệu hiện có trong kho mã nguồn.
-2. Giải quyết các thành phần trong dấu ngoặc vuông [ ].
-3. Làm sạch các ghi chú hướng dẫn.
+I. GIAO THỨC THỰC THI CHO AGENT (DÀNH CHO AI):
+1. THU THẬP NGỮ CẢNH: Quét thư mục `docs/VN` để tìm tất cả các tệp tài liệu hiện có.
+2. ĐIỀN DỮ LIỆU: Giải quyết [Tên Dự án].
+3. TỐI ƯU HÓA: Loại bỏ các liên kết đến các tệp không tồn tại trong thư mục tài liệu của dự án.
+4. LÀM SẠCH: Xóa bỏ tất cả ghi chú in nghiêng và khối hướng dẫn này.
+
+II. HƯỚNG DẪN TÙY BIẾN CHO NGƯỜI DÙNG:
+1. ĐIỀU HƯỚNG: Đảm bảo danh sách "Đọc theo thứ tự sau" phản ánh đúng độ phức tạp và cấu trúc thực tế của dự án bạn.
+2. BẢN ĐỒ TỆP: Cập nhật bảng để bao gồm bất kỳ tệp tài liệu tùy chỉnh nào bạn đã thêm vào (ví dụ: `security-audit.md`).
+3. HOÀN THIỆN: Xác minh tất cả các liên kết nội bộ hoạt động chính xác. Xóa văn bản hướng dẫn (chữ *in nghiêng*) trước khi xuất bản.
 -->
 
 # Tài liệu Tiếng Việt

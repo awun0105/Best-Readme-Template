@@ -1,12 +1,18 @@
 <!-- 
-BẢN MẪU SAO LƯU VÀ PHỤC HỒI
-===========================
-Trọng tâm: Bảo tồn trạng thái và quy trình phục hồi sau sự cố.
+BẢN MẪU TÀI LIỆU: Sao lưu và Phục hồi
+====================================
+Trọng tâm: Bảo tồn trạng thái, an toàn dữ liệu và quy trình phục hồi sau sự cố.
 
-GIAO THỨC THỰC THI CHO AGENT:
-1. Xác định lệnh dump DB và logic sao lưu lưu trữ đối tượng.
-2. Điền dữ liệu vào dấu ngoặc vuông [ ].
-3. Làm sạch các ghi chú hướng dẫn.
+I. GIAO THỨC THỰC THI CHO AGENT (DÀNH CHO AI):
+1. THU THẬP NGỮ CẢNH: Xác định các thành phần có trạng thái quan trọng (cơ sở dữ liệu, lưu trữ đối tượng, tệp cấu hình) và các script hoặc công cụ sao lưu hiện có.
+2. ĐIỀN DỮ LIỆU: Thay thế văn bản trong dấu ngoặc vuông `[ ]` bằng các công cụ và lệnh CLI chính xác dùng để dump và restore dữ liệu.
+3. TỐI ƯU HÓA: Loại bỏ các phần nếu dự án là stateless hoặc sử dụng các dịch vụ sao lưu được quản lý hoàn toàn.
+4. LÀM SẠCH: Xóa bỏ tất cả ghi chú in nghiêng và khối hướng dẫn này.
+
+II. HƯỚNG DẪN TÙY BIẾN CHO NGƯỜI DÙNG:
+1. ĐIỀN THÔNG TIN: Cung cấp các ví dụ CLI đã được kiểm thử cho backend cơ sở dữ liệu và lưu trữ cụ thể của dự án.
+2. ĐIỀU CHỈNH: Xác định tần suất "Chiến lược Sao lưu" rõ ràng (ví dụ: hàng ngày, hàng giờ).
+3. HOÀN THIỆN: Đảm bảo các bước phục hồi đã được xác minh. Xóa văn bản hướng dẫn (chữ *in nghiêng*) trước khi xuất bản.
 -->
 
 # Sao lưu và Phục hồi

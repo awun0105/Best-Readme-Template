@@ -1,13 +1,18 @@
 <!-- 
-BẢN MẪU TỔNG QUAN DỰ ÁN
-=======================
-Trọng tâm: Xác định dự án là GÌ và ranh giới nằm ở ĐÂU.
+BẢN MẪU TÀI LIỆU: Tổng quan Dự án
+================================
+Bản mẫu này cung cấp cấu trúc chuẩn hóa để định nghĩa phạm vi và khả năng của dự án.
 
-GIAO THỨC THỰC THI CHO AGENT:
-1. Quét mã nguồn để tìm các dịch vụ, tích hợp và logic.
-2. Điền dữ liệu vào dấu ngoặc vuông [ ].
-3. Loại bỏ các phần [TÙY CHỌN] nếu không liên quan.
-4. Làm sạch các ghi chú hướng dẫn.
+I. GIAO THỨC THỰC THI CHO AGENT (DÀNH CHO AI):
+1. THU THẬP NGỮ CẢNH: Quét kho mã nguồn để tìm các dịch vụ cốt lõi, tích hợp bên ngoài và các luồng logic chính.
+2. ĐIỀN DỮ LIỆU: Thay thế tất cả chuỗi trong dấu ngoặc vuông `[ ]` bằng dữ liệu dự án đã được xác thực.
+3. TỐI ƯU HÓA: Loại bỏ các phần [TÙY CHỌN] không áp dụng cho kiến trúc hiện tại.
+4. LÀM SẠCH: Xóa bỏ tất cả ghi chú in nghiêng và khối hướng dẫn này.
+
+II. HƯỚNG DẪN TÙY BIẾN CHO NGƯỜI DÙNG:
+1. ĐIỀN THÔNG TIN: Tìm các đoạn văn bản trong dấu ngoặc vuông `[ ]` và thay thế bằng chi tiết cụ thể của dự án.
+2. ĐIỀU CHỈNH: Sao chép các đầu mục hoặc tiểu mục nếu có nhiều tính năng. Xóa các phần [TÙY CHỌN] nếu không cần thiết.
+3. HOÀN THIỆN: Sau khi điền xong, xóa toàn bộ văn bản hướng dẫn (chữ *in nghiêng*) để đảm bảo tài liệu chuyên nghiệp, sẵn sàng xuất bản.
 -->
 
 # Tổng quan Dự án

@@ -1,12 +1,18 @@
 <!-- 
-DOCUMENTATION MAP TEMPLATE
-==========================
-This is the central index for all project documentation.
+DOCUMENTATION TEMPLATE: Main Map
+===============================
+Focus: Global navigation and role-based reading paths for all project documentation.
 
-AGENT EXECUTION PROTOCOL:
-1. Harvest project details to explain the documentation structure.
-2. Resolve [brackets].
-3. Clean up instructional notes.
+I. AGENT EXECUTION PROTOCOL (INTERNAL GUIDANCE):
+1. CONTEXT HARVESTING: Verify the existence of language directories (EN, VN) and core documentation files.
+2. PLACEHOLDER RESOLUTION: Resolve [Project Title / Name].
+3. PRUNING: Remove language links or paths if only one documentation set is available.
+4. SURGICAL CLEANUP: Delete all italicized notes and this instruction block.
+
+II. HUMAN CUSTOMIZATION GUIDE:
+1. NAVIGATION: Update the folder structure diagram if your documentation is organized differently.
+2. READING PATHS: Adjust the recommended paths for New Users, Developers, and Operators based on your project's specific onboarding flow.
+3. FINALIZATION: Ensure the "Question Index" links to the most relevant documents for quick answers. Delete instructional text (in *italics*) before publishing.
 -->
 
 # Documentation Map

@@ -1,12 +1,18 @@
 <!-- 
-PRODUCTION SETUP TEMPLATE (UNIVERSAL)
-====================================
-Focus: Standard step-by-step instructions for any production deployment.
+DOCUMENTATION TEMPLATE: Production Setup
+=======================================
+Focus: Step-by-step procedure for deploying to a live environment.
 
-AGENT EXECUTION PROTOCOL:
-1. Scan project's build and deployment automation files.
-2. Resolve [brackets] with the relevant platform and tool labels.
-3. Clean up instructional notes.
+I. AGENT EXECUTION PROTOCOL (INTERNAL GUIDANCE):
+1. CONTEXT HARVESTING: Scan deployment manifests (Dockerfile, docker-compose.yml, helm charts) and infrastructure scripts.
+2. PLACEHOLDER RESOLUTION: Replace [bracketed] terms with the specific production runtime, ports, and CLI commands.
+3. PRUNING: Remove platform-specific sections (e.g., Kubernetes) if only Docker is supported.
+4. SURGICAL CLEANUP: Delete all italicized notes and this instruction block.
+
+II. HUMAN CUSTOMIZATION GUIDE:
+1. PLACEHOLDERS: Replace generic labels like `[Runtime]` and `[docker-compose up -d]` with your project's actual commands.
+2. TAILORING: Add sections for specific Cloud providers (AWS, Azure, GCP) if applicable.
+3. FINALIZATION: Verify that the deployment steps are tested and accurate for a clean install. Delete instructional text (in *italics*) before publishing.
 -->
 
 # Production Setup

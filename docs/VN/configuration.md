@@ -1,12 +1,18 @@
 <!-- 
-BẢN MẪU CẤU HÌNH (PHỔ QUÁT)
-==========================
-Trọng tâm: Chi tiết về các biến môi trường, thiết lập và quản lý bí mật.
+BẢN MẪU TÀI LIỆU: Cấu hình
+=========================
+Trọng tâm: Chi tiết về các biến môi trường, thiết lập nội bộ và quản lý thông tin xác thực.
 
-GIAO THỨC THỰC THI CHO AGENT:
-1. Quét các tệp cấu hình dự án (.env, settings.py, config.yaml, v.v.).
-2. Giải quyết các dấu ngoặc vuông [ ] bằng các nhóm biến dự án phù hợp.
-3. Làm sạch các ghi chú hướng dẫn.
+I. GIAO THỨC THỰC THI CHO AGENT (DÀNH CHO AI):
+1. THU THẬP NGỮ CẢNH: Quét mã nguồn để tìm các tệp mẫu môi trường (.env.example), các lớp cấu hình và các phụ thuộc bí mật bên ngoài.
+2. ĐIỀN DỮ LIỆU: Thay thế các nhãn trong dấu ngoặc vuông `[ ]` bằng các nhóm biến và mô tả cụ thể của dự án.
+3. TỐI ƯU HÓA: Loại bỏ các danh mục cấu hình (ví dụ: Logging) nếu chúng được xử lý ngầm định.
+4. LÀM SẠCH: Xóa bỏ tất cả ghi chú in nghiêng và khối hướng dẫn này.
+
+II. HƯỚNG DẪN TÙY BIẾN CHO NGƯỜI DÙNG:
+1. ĐIỀN THÔNG TIN: Cập nhật các bảng thiết lập với các biến môi trường thực tế và giá trị mặc định của dự án.
+2. ĐIỀU CHỈNH: Thêm hoặc bớt các nhóm dựa trên độ phức tạp của dịch vụ (ví dụ: thêm phần "API bên thứ ba").
+3. HOÀN THIỆN: Đảm bảo tất cả các key nhạy cảm được tài liệu hóa dưới dạng placeholder và không bao giờ được viết trực tiếp (hardcoded). Xóa văn bản hướng dẫn (chữ *in nghiêng*) trước khi xuất bản.
 -->
 
 # Cấu hình

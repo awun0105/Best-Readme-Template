@@ -1,12 +1,18 @@
 <!-- 
-BACKUP AND RESTORE TEMPLATE
-===========================
-Focus: State preservation and recovery procedures.
+DOCUMENTATION TEMPLATE: Backup and Restore
+==========================================
+Focus: State preservation, data safety, and disaster recovery procedures.
 
-AGENT EXECUTION PROTOCOL:
-1. Identify database dump commands and object store backup logic.
-2. Resolve [brackets].
-3. Clean up instructional notes.
+I. AGENT EXECUTION PROTOCOL (INTERNAL GUIDANCE):
+1. CONTEXT HARVESTING: Identify critical stateful components (databases, object stores, config files) and existing backup scripts or tools.
+2. PLACEHOLDER RESOLUTION: Replace [bracketed] text with the exact tools and CLI commands used for dumping and restoring data.
+3. PRUNING: Remove sections if the project is stateless or uses managed backups.
+4. SURGICAL CLEANUP: Delete all italicized notes and this instruction block.
+
+II. HUMAN CUSTOMIZATION GUIDE:
+1. PLACEHOLDERS: Provide tested CLI examples for your project's specific database and storage backends.
+2. TAILORING: Define a clear "Backup Strategy" frequency (e.g., daily, hourly).
+3. FINALIZATION: Ensure recovery steps are verified. Delete instructional text (in *italics*) before publishing.
 -->
 
 # Backup and Restore

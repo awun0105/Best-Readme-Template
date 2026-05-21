@@ -1,12 +1,18 @@
 <!-- 
-BẢN MẪU PHÁT TRIỂN CỤC BỘ
-=========================
-Trọng tâm: Thiết lập mã nguồn để làm việc và gỡ lỗi tại máy cá nhân.
+BẢN MẪU TÀI LIỆU: Phát triển cục bộ
+=================================
+Trọng tâm: Thiết lập môi trường, quản lý thư viện và kiểm thử/gỡ lỗi cục bộ.
 
-GIAO THỨC THỰC THI CHO AGENT:
-1. Xác định công cụ phát triển, lệnh kiểm thử và các bước thiết lập.
-2. Điền dữ liệu vào dấu ngoặc vuông [ ].
-3. Làm sạch các ghi chú hướng dẫn.
+I. GIAO THỨC THỰC THI CHO AGENT (DÀNH CHO AI):
+1. THU THẬP NGỮ CẢNH: Xác định runtime yêu cầu (Python, Node, v.v.), các tệp quản lý thư viện và hạ tầng cục bộ (ví dụ: dev docker-compose).
+2. ĐIỀN DỮ LIỆU: Thay thế văn bản trong dấu ngoặc vuông `[ ]` bằng các lệnh CLI thực tế để tạo môi trường và cài đặt thư viện.
+3. TỐI ƯU HÓA: Loại bỏ các phần như "Linting" nếu không có công cụ nào được cấu hình trong kho mã nguồn.
+4. LÀM SẠCH: Xóa bỏ tất cả ghi chú in nghiêng và khối hướng dẫn này.
+
+II. HƯỚNG DẪN TÙY BIẾN CHO NGƯỜI DÙNG:
+1. ĐIỀN THÔNG TIN: Cập nhật hướng dẫn với các lệnh thiết lập đã được kiểm thử của bạn (ví dụ: `npm install` hoặc `pip install`).
+2. ĐIỀU CHỈNH: Thêm các ghi chú cụ thể về cấu hình IDE hoặc các công cụ gỡ lỗi cục bộ mà đội ngũ của bạn sử dụng.
+3. HOÀN THIỆN: Đảm bảo phần "Chạy ứng dụng tại máy cá nhân" đơn giản và hoạt động được ngay sau khi clone mã nguồn. Xóa văn bản hướng dẫn (chữ *in nghiêng*) trước khi xuất bản.
 -->
 
 # Phát triển Cục bộ

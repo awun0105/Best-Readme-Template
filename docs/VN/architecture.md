@@ -1,12 +1,19 @@
 <!-- 
-BẢN MẪU KIẾN TRÚC
-=================
-Trọng tâm: Xác định dự án được xây dựng NHƯ THẾ NÀO.
+BẢN MẪU TÀI LIỆU: Kiến trúc hệ thống
+===================================
+Trọng tâm: Định nghĩa thiết kế cấu trúc, trách nhiệm thành phần và tương tác hệ thống.
 
-GIAO THỨC THỰC THI CHO AGENT:
-1. Xác định các dịch vụ, cơ sở dữ liệu và đường truyền giao tiếp.
-2. Giải quyết các thành phần trong dấu ngoặc vuông [ ].
-3. Làm sạch các ghi chú hướng dẫn.
+I. GIAO THỨC THỰC THI CHO AGENT (DÀNH CHO AI):
+1. THU THẬP NGỮ CẢNH: Xác định các dịch vụ ứng dụng cốt lõi, cơ sở dữ liệu, hàng đợi thông báo và framework giao diện.
+2. ĐIỀN DỮ LIỆU: Thay thế tất cả chuỗi trong dấu ngoặc vuông `[ ]` bằng dữ liệu cấu trúc cụ thể của dự án.
+3. TỐI ƯU HÓA: Loại bỏ các phần [TÙY CHỌN] hoặc các dòng trong bảng nếu chúng không khớp với stack công nghệ của dự án.
+4. LÀM SẠCH: Xóa bỏ tất cả ghi chú in nghiêng và khối hướng dẫn này.
+
+II. HƯỚNG DẪN TÙY BIẾN CHO NGƯỜI DÙNG:
+1. ĐIỀN THÔNG TIN: Thay thế văn bản trong dấu ngoặc vuông `[ ]` bằng các công nghệ và mẫu thiết kế cụ thể của bạn.
+2. ĐIỀU CHỈNH: Thêm hoặc bớt các dòng trong bảng Phong cách Kiến trúc dựa trên chiến lược phân lớp của bạn.
+3. TRỰC QUAN HÓA: Cập nhật cú pháp sơ đồ Mermaid để phản ánh chính xác các luồng dữ liệu thực tế.
+4. HOÀN THIỆN: Xóa toàn bộ văn bản hướng dẫn (chữ *in nghiêng*) trước khi xuất bản.
 -->
 
 # Kiến trúc hệ thống

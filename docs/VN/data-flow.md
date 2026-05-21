@@ -1,12 +1,18 @@
 <!-- 
-BẢN MẪU LUỒNG DỮ LIỆU (PHỔ QUÁT)
-===============================
-Trọng tâm: Trực quan hóa và mô tả cách dữ liệu di chuyển trong bất kỳ hệ thống phần mềm nào.
+BẢN MẪU TÀI LIỆU: Luồng dữ liệu
+==============================
+Trọng tâm: Trực quan hóa và mô tả hành trình từ đầu đến cuối của thông tin.
 
-GIAO THỨC THỰC THI CHO AGENT:
-1. Ánh xạ hành trình dữ liệu của dự án từ lúc bắt đầu đến khi lưu trữ.
-2. Giải quyết các dấu ngoặc vuông [ ] bằng các danh mục dịch vụ chung hoặc cụ thể.
-3. Làm sạch các ghi chú hướng dẫn.
+I. GIAO THỨC THỰC THI CHO AGENT (DÀNH CHO AI):
+1. THU THẬP NGỮ CẢNH: Ánh xạ lộ trình yêu cầu, các trigger xử lý nền và các điểm thu thập số liệu đo lường.
+2. ĐIỀN DỮ LIỆU: Thay thế tất cả chuỗi trong dấu ngoặc vuông `[ ]` bằng các chi tiết di chuyển dữ liệu đã được xác thực.
+3. TỐI ƯU HÓA: Loại bỏ các danh mục luồng (ví dụ: Xử lý nền) nếu dự án không sử dụng.
+4. LÀM SẠCH: Xóa bỏ tất cả ghi chú in nghiêng và khối hướng dẫn này.
+
+II. HƯỚNG DẪN TÙY BIẾN CHO NGƯỜI DÙNG:
+1. ĐIỀN THÔNG TIN: Thay thế văn bản trong dấu ngoặc vuông `[ ]` bằng nhãn dịch vụ và dữ liệu cụ thể của bạn.
+2. ĐIỀU CHỈNH: Tùy chỉnh sơ đồ trình tự Mermaid để khớp với các lớp API và logic cụ thể của bạn.
+3. HOÀN THIỆN: Xóa toàn bộ văn bản hướng dẫn (chữ *in nghiêng*) để duy trì chất lượng tài liệu cao.
 -->
 
 # Luồng dữ liệu

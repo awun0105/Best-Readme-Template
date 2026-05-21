@@ -1,12 +1,18 @@
 <!-- 
-ENGLISH DOCUMENTATION INDEX TEMPLATE
+DOCUMENTATION TEMPLATE: English Index
 ====================================
-Focus: Detailed guide and file-by-file map for the English documentation suite.
+Focus: Detailed roadmap and file-by-file map for the English documentation suite.
 
-AGENT EXECUTION PROTOCOL:
-1. Harvest context about the documentation files present in the repo.
-2. Resolve [brackets] in this index.
-3. Clean up instructional notes.
+I. AGENT EXECUTION PROTOCOL (INTERNAL GUIDANCE):
+1. CONTEXT HARVESTING: Scan the `docs/EN` directory for all present documentation files.
+2. PLACEHOLDER RESOLUTION: Resolve [Project Title / Name].
+3. PRUNING: Remove links to files that do not exist in the project's documentation folder.
+4. SURGICAL CLEANUP: Delete all italicized notes and this instruction block.
+
+II. HUMAN CUSTOMIZATION GUIDE:
+1. NAVIGATION: Ensure the "Read in this order" list reflects the actual complexity and structure of your project.
+2. FILE MAP: Update the table to include any custom documentation files you've added (e.g., `security-audit.md`).
+3. FINALIZATION: Verify all internal links work correctly. Delete instructional text (in *italics*) before publishing.
 -->
 
 # English Documentation

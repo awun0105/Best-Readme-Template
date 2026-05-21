@@ -1,12 +1,18 @@
 <!-- 
-CONFIGURATION TEMPLATE (UNIVERSAL)
-==================================
-Focus: Detailing environment variables, settings, and secrets management.
+DOCUMENTATION TEMPLATE: Configuration
+=====================================
+Focus: Detailing environment variables, internal settings, and credential management.
 
-AGENT EXECUTION PROTOCOL:
-1. Scan project config files (.env, settings.py, config.yaml, etc.).
-2. Resolve [brackets] with applicable project variable groups.
-3. Clean up instructional notes.
+I. AGENT EXECUTION PROTOCOL (INTERNAL GUIDANCE):
+1. CONTEXT HARVESTING: Scan codebase for environment file templates (.env.example), configuration classes, and external secret dependencies.
+2. PLACEHOLDER RESOLUTION: Replace [bracketed] labels with project-specific variable groups and descriptions.
+3. PRUNING: Remove configuration categories (e.g., Logging) if they are handled implicitly.
+4. SURGICAL CLEANUP: Delete all italicized notes and this instruction block.
+
+II. HUMAN CUSTOMIZATION GUIDE:
+1. PLACEHOLDERS: Populate the settings tables with your project's actual environment variables and their default values.
+2. TAILORING: Add or remove groups based on your service's complexity (e.g., add "Third-Party APIs" section).
+3. FINALIZATION: Ensure all sensitive keys are documented as placeholders and never hardcoded. Delete instructional text (in *italics*) before publishing.
 -->
 
 # Configuration

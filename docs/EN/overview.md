@@ -1,13 +1,18 @@
 <!-- 
-PROJECT OVERVIEW TEMPLATE
-=========================
-Focus: Defining WHAT the project is and WHERE its boundaries are.
+DOCUMENTATION TEMPLATE: Overview
+================================
+This template provides a standardized structure for defining project scope and capabilities.
 
-AGENT EXECUTION PROTOCOL:
-1. Scan code for services, integrations, and logic.
-2. Populate [brackets].
-3. Prune [OPTIONAL] sections if irrelevant.
-4. Clean up instructional notes.
+I. AGENT EXECUTION PROTOCOL (INTERNAL GUIDANCE):
+1. CONTEXT HARVESTING: Scan the repository for core services, external integrations, and main logic flows.
+2. PLACEHOLDER RESOLUTION: Replace all [bracketed] strings with verified project data.
+3. PRUNING: Remove [OPTIONAL] sections that do not apply to the current architecture.
+4. SURGICAL CLEANUP: Delete all italicized notes and this instruction block.
+
+II. HUMAN CUSTOMIZATION GUIDE:
+1. PLACEHOLDERS: Locate all text within `[brackets]` and replace it with your project's specific details.
+2. TAILORING: Duplicate bullet points or sub-sections as needed for multiple features. Delete sections marked [OPTIONAL] if irrelevant.
+3. FINALIZATION: Once populated, delete all instructional text (in *italics*) to ensure a professional, publication-ready document.
 -->
 
 # Project Overview

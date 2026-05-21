@@ -1,12 +1,19 @@
 <!-- 
-ARCHITECTURE TEMPLATE
-=====================
-Focus: Defining HOW the project is built.
+DOCUMENTATION TEMPLATE: Architecture
+=====================================
+Focus: Defining the structural design, component responsibilities, and system interactions.
 
-AGENT EXECUTION PROTOCOL:
-1. Identify services, databases, and communication paths.
-2. Resolve [brackets].
-3. Clean up instructional notes.
+I. AGENT EXECUTION PROTOCOL (INTERNAL GUIDANCE):
+1. CONTEXT HARVESTING: Identify core application services, databases, messaging queues, and UI frameworks.
+2. PLACEHOLDER RESOLUTION: Replace all [bracketed] strings with project-specific structural data.
+3. PRUNING: Remove [OPTIONAL] sections or table rows if they do not match the project stack.
+4. SURGICAL CLEANUP: Delete all italicized notes and this instruction block.
+
+II. HUMAN CUSTOMIZATION GUIDE:
+1. PLACEHOLDERS: Replace text within `[brackets]` with your specific technologies and design patterns.
+2. TAILORING: Add or remove rows in the Architectural Style table based on your layering strategy.
+3. VISUALS: Update the Mermaid flowchart syntax to reflect your actual data paths.
+4. FINALIZATION: Delete all instructional text (in *italics*) before publishing.
 -->
 
 # Architecture

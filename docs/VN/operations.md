@@ -1,12 +1,18 @@
 <!-- 
-BẢN MẪU VẬN HÀNH (PHỔ QUÁT)
-==========================
-Trọng tâm: Sức khỏe hệ thống, số liệu, nhật ký và quy trình bảo trì.
+BẢN MẪU TÀI LIỆU: Vận hành
+=========================
+Trọng tâm: Giám sát sức khỏe, số liệu hiệu năng, chiến lược ghi nhật ký và quản lý tác vụ.
 
-GIAO THỨC THỰC THI CHO AGENT:
-1. Quét dự án để tìm các endpoint giám sát và cấu hình ghi nhật ký.
-2. Giải quyết các dấu ngoặc vuông [ ] bằng các giao diện vận hành cụ thể của dự án.
-3. Làm sạch các ghi chú hướng dẫn.
+I. GIAO THỨC THỰC THI CHO AGENT (DÀNH CHO AI):
+1. THU THẬP NGỮ CẢNH: Xác định các endpoint vận hành (/health, /metrics), định dạng log (JSON/Văn bản) và các hệ thống xử lý tác vụ nền.
+2. ĐIỀN DỮ LIỆU: Thay thế tất cả các nhãn trong dấu ngoặc vuông `[ ]` bằng các cổng, đường dẫn và nhãn số liệu thực tế của dự án.
+3. TỐI ƯU HÓA: Loại bỏ các phần Tác vụ nền hoặc Số liệu nếu dự án không hỗ trợ.
+4. LÀM SẠCH: Xóa bỏ tất cả ghi chú in nghiêng và khối hướng dẫn này.
+
+II. HƯỚNG DẪN TÙY BIẾN CHO NGƯỜI DÙNG:
+1. ĐIỀN THÔNG TIN: Thay thế `[HOST]`, `[CỔNG]`, và `[đường-dẫn-health]` bằng chi tiết dịch vụ thực tế của bạn.
+2. ĐIỀU CHỈNH: Tùy chỉnh bảng Xử lý sự cố với các lỗi thường gặp được phát hiện trong quá trình kiểm thử.
+3. HOÀN THIỆN: Đảm bảo các lệnh vận hành (ví dụ: curl) chính xác với cấu trúc API của bạn. Xóa văn bản hướng dẫn (chữ *in nghiêng*) trước khi xuất bản.
 -->
 
 # Hướng dẫn Vận hành

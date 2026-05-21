@@ -1,12 +1,18 @@
 <!-- 
-BẢN MẪU THIẾT LẬP PRODUCTION (PHỔ QUÁT)
+BẢN MẪU TÀI LIỆU: Thiết lập Production
 ======================================
-Trọng tâm: Hướng dẫn chuẩn từng bước cho bất kỳ quy trình triển khai thực tế nào.
+Trọng tâm: Quy trình từng bước để triển khai lên môi trường vận hành thực tế.
 
-GIAO THỨC THỰC THI CHO AGENT:
-1. Quét các tệp tự động hóa build và triển khai của dự án.
-2. Giải quyết các dấu ngoặc vuông [ ] bằng các nhãn nền tảng và công cụ liên quan.
-3. Làm sạch các ghi chú hướng dẫn.
+I. GIAO THỨC THỰC THI CHO AGENT (DÀNH CHO AI):
+1. THU THẬP NGỮ CẢNH: Quét các bản kê triển khai (Dockerfile, docker-compose.yml, helm charts) và các script hạ tầng.
+2. ĐIỀN DỮ LIỆU: Thay thế các thuật ngữ trong dấu ngoặc vuông `[ ]` bằng runtime production, cổng và các lệnh CLI cụ thể.
+3. TỐI ƯU HÓA: Loại bỏ các phần đặc thù của nền tảng (ví dụ: Kubernetes) nếu chỉ hỗ trợ Docker.
+4. LÀM SẠCH: Xóa bỏ tất cả ghi chú in nghiêng và khối hướng dẫn này.
+
+II. HƯỚNG DẪN TÙY BIẾN CHO NGƯỜI DÙNG:
+1. ĐIỀN THÔNG TIN: Thay thế các nhãn chung như `[Runtime]` và `[docker-compose up -d]` bằng các lệnh thực tế của dự án.
+2. ĐIỀU CHỈNH: Thêm các phần cho các nhà cung cấp Cloud cụ thể (AWS, Azure, GCP) nếu có.
+3. HOÀN THIỆN: Xác minh rằng các bước triển khai đã được kiểm thử và chính xác cho một lần cài đặt sạch. Xóa văn bản hướng dẫn (chữ *in nghiêng*) trước khi xuất bản.
 -->
 
 # Thiết lập Production

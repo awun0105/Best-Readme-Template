@@ -1,12 +1,18 @@
 <!-- 
-OPERATIONS TEMPLATE (UNIVERSAL)
-===============================
-Focus: Health, metrics, logs, and maintenance procedures.
+DOCUMENTATION TEMPLATE: Operations
+==================================
+Focus: Health monitoring, performance metrics, logging strategy, and job management.
 
-AGENT EXECUTION PROTOCOL:
-1. Scan project for monitoring endpoints and logging configuration.
-2. Resolve [brackets] with the project's specific operational interfaces.
-3. Clean up instructional notes.
+I. AGENT EXECUTION PROTOCOL (INTERNAL GUIDANCE):
+1. CONTEXT HARVESTING: Identify operational endpoints (/health, /metrics), logging format (JSON/Text), and background job backends.
+2. PLACEHOLDER RESOLUTION: Replace all [bracketed] tags with actual project ports, paths, and metric labels.
+3. PRUNING: Remove Background Jobs or Metrics sections if the project does not support them.
+4. SURGICAL CLEANUP: Delete all italicized notes and this instruction block.
+
+II. HUMAN CUSTOMIZATION GUIDE:
+1. PLACEHOLDERS: Replace `[HOST]`, `[PORT]`, and `[health-path]` with your actual service details.
+2. TAILORING: Customize the Troubleshooting table with common failure modes identified during testing.
+3. FINALIZATION: Ensure operational commands (e.g., curl) are correct for your API structure. Delete instructional text (in *italics*) before publishing.
 -->
 
 # Operations Guide

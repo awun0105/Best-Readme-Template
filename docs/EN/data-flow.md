@@ -1,12 +1,18 @@
 <!-- 
-DATA FLOWS TEMPLATE (UNIVERSAL)
-===============================
-Focus: Visualizing and describing how data moves through any software system.
+DOCUMENTATION TEMPLATE: Data Flows
+==================================
+Focus: Visualizing and describing the end-to-end journey of information.
 
-AGENT EXECUTION PROTOCOL:
-1. Map the project's data journey from entry to persistence.
-2. Resolve [brackets] with generic or specific service categories.
-3. Clean up instructional notes.
+I. AGENT EXECUTION PROTOCOL (INTERNAL GUIDANCE):
+1. CONTEXT HARVESTING: Map request paths, background processing triggers, and telemetry collection points.
+2. PLACEHOLDER RESOLUTION: Replace all [bracketed] strings with verified data movement details.
+3. PRUNING: Remove flow categories (e.g., Background Processing) if not utilized by the project.
+4. SURGICAL CLEANUP: Delete all italicized notes and this instruction block.
+
+II. HUMAN CUSTOMIZATION GUIDE:
+1. PLACEHOLDERS: Replace all text within `[brackets]` with your specific service and data labels.
+2. TAILORING: Customize the Mermaid sequence diagram to match your specific API and logic layers.
+3. FINALIZATION: Delete all instructional text (in *italics*) to maintain high documentation quality.
 -->
 
 # Data Flows
