@@ -9,6 +9,7 @@ This repository provides standardized, icon-free documentation frameworks inspir
 - **Professional Framework**: Top-down logical flow designed for discovery, technical understanding, and implementation.
 - **Icon-Free Design**: Focuses on clean text, Roman numerals, and standard numbering to maintain professional aesthetics.
 - **AI-Agent Ready**: Uniquely includes a high-signal "Agent Execution Protocol" to facilitate automated documentation generation.
+- **Documentation Suite**: Provides deep-dive templates for Architecture and Project Overview in both English and Vietnamese.
 - **Bilingual Support**: Includes both English and Vietnamese templates.
 
 ## The Agent Execution Protocol

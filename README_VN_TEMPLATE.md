@@ -29,7 +29,7 @@ II. DÀNH CHO LẬP TRÌNH VIÊN:
 
 **[Một câu tóm tắt ngắn gọn về giá trị cốt lõi của dự án.]**
 
-<!-- [TÙY CHỌN nhưng KHUYẾN NGHỊ] Các Badge (ví dụ: Trạng thái Build, Giấy phép, Phiên bản ngôn ngữ) -->
+<!-- [TÙY CHỌN nhưng KHUYẾN NGHỊ] Các Badge (ví dụ: Trạng thái Build, Giấy phép, Phiên bản ngôn ngữ), liên kết hữu ích (youtube demo, host link, etc.) -->
 [![Giấy phép](https://img.shields.io/badge/License-[Ten_Giay_Phep]-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 
@@ -69,11 +69,6 @@ II. DÀNH CHO LẬP TRÌNH VIÊN:
 
 **[TÙY CHỌN]**
 *Cung cấp minh chứng trực quan về dự án (Giao diện người dùng, kết quả từ dòng lệnh hoặc kết quả đầu ra).*
-
-| Mô tả | Ảnh chụp màn hình |
-|-------|-------------------|
-| [Giao diện Dashboard] | ![Ảnh chụp A](docs/assets/screenshot_a.png) |
-| [Giao diện di động] | ![Ảnh chụp B](docs/assets/screenshot_b.png) |
 
 ## Tính năng chính
 
