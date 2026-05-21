@@ -30,7 +30,7 @@ II. DÀNH CHO LẬP TRÌNH VIÊN:
 **[Một câu tóm tắt ngắn gọn về giá trị cốt lõi của dự án.]**
 
 <!-- [TÙY CHỌN nhưng KHUYẾN NGHỊ] Các Badge (ví dụ: Trạng thái Build, Giấy phép, Phiên bản ngôn ngữ) -->
-[![Giấy phép](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Giấy phép](https://img.shields.io/badge/License-[Ten_Giay_Phep]-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 
 </div>

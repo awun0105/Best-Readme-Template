@@ -49,7 +49,7 @@ Inspired by the structured documentation found in NVIDIA AI Blueprints and enter
 
 ## License
 
-This project is licensed under the Apache 2.0 License.
+This project is currently unlicensed. You are free to use the templates for your own projects, but the repository itself does not yet have a formal license.
 
 ---
 

@@ -33,7 +33,7 @@ Instructions for use:
 **[A concise, one-sentence subtitle describing the project's main value proposition.]**
 
 <!-- [OPTIONAL but RECOMMENDED] Badges (e.g., Build Status, License, Python/Node versions) -->
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-[License_Name]-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 
 </div>
