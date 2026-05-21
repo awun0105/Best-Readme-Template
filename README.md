@@ -1,15 +1,15 @@
 # Best-Readme-Template
 
-**A collection of structured README and documentation templates designed for readability and AI-assisted population.**
+**A collection of structured README and documentation templates designed for readability and automated filling by AI.**
 
-This repository provides standardized, icon-free templates inspired by professional repository structures. They help maintain consistency across projects while supporting automated updates via AI agents.
+This repository provides standardized, icon-free templates inspired by professional repository structures. They help maintain consistency across projects while supporting automated generation via AI agents.
 
 ## Key Features
 
 - **Standardized Framework**: A top-down flow covering overview, architecture, and implementation.
 - **Icon-Free Design**: Focuses on clean text and standard numbering for a professional look.
 - **Bilingual Support**: Full templates provided in both English and Vietnamese.
-- **Agent-Ready**: Includes a specific protocol to help AI agents (like Gemini or Claude) auto-fill documentation based on your code.
+- **AI-Ready**: Includes a specific protocol to help AI agents (like Gemini or Claude) auto-fill documentation based on your code.
 
 ## Documentation Suite
 
