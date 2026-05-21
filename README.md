@@ -1,65 +1,53 @@
 # Best-Readme-Template
 
-**A collection of enterprise-grade, highly organized README templates designed for both human readability and seamless AI agent integration.**
+**A collection of structured README and documentation templates designed for readability and AI-assisted population.**
 
-This repository provides standardized, icon-free documentation frameworks inspired by professional standards (such as NVIDIA AI Blueprints). These templates are engineered to ensure your documentation remains clear, academic, and professional.
+This repository provides standardized, icon-free templates inspired by professional repository structures. They help maintain consistency across projects while supporting automated updates via AI agents.
 
-## Features
+## Key Features
 
-- **Professional Framework**: Top-down logical flow designed for discovery, technical understanding, and implementation.
-- **Icon-Free Design**: Focuses on clean text, Roman numerals, and standard numbering to maintain professional aesthetics.
-- **AI-Agent Ready**: Uniquely includes a high-signal "Agent Execution Protocol" to facilitate automated documentation generation.
-- **Full Documentation Suite**: Beyond the README, providing 18+ deep-dive templates for Architecture, Data Flows, Operations, and Deployment in both English and Vietnamese.
-- **Bilingual Support**: Comprehensive support for English and Vietnamese across all templates.
+- **Standardized Framework**: A top-down flow covering overview, architecture, and implementation.
+- **Icon-Free Design**: Focuses on clean text and standard numbering for a professional look.
+- **Bilingual Support**: Full templates provided in both English and Vietnamese.
+- **Agent-Ready**: Includes a specific protocol to help AI agents (like Gemini or Claude) auto-fill documentation based on your code.
 
-## The Agent Execution Protocol
+## Documentation Suite
 
-The standout feature of these templates is the **Agent Execution Protocol (Internal Guidance)**. 
+For complex projects, you can use the detailed templates in the `docs/` directory:
 
-When you feed these templates to an AI Agent (like Gemini or Claude), it doesn't just treat it as a text file. The protocol instructs the agent to:
-1.  **Harvest Context**: Scan your codebase and files to gather data.
-2.  **Populate Placeholders**: Automatically replace `[bracketed]` text with real data.
-3.  **Optimize Structure**: Automatically prune optional sections if they aren't relevant to your project.
-4.  **Clean Up**: Remove all instructional notes and the protocol itself, leaving a perfect, publication-ready document.
-
-## Exploring the Documentation Suite
-
-For complex projects, a single README is rarely enough. The `docs/` directory provides a structured documentation framework:
-
-- **[Documentation Map](docs/README.md)**: A high-level directory of all available guides.
-- **Core Insights**: Detailed templates for [Project Overview](docs/EN/overview.md) and [Architecture](docs/EN/architecture.md).
-- **Technical Guides**: Standardized templates for [Data Flows](docs/EN/data-flow.md), [Local Development](docs/EN/local-development.md), and [Configuration](docs/EN/configuration.md).
-- **Operational Excellence**: Professional runbooks for [Production Setup](docs/EN/deployment/setup.md), [Operations](docs/EN/operations.md), and [Backup/Restore](docs/EN/deployment/backup-restore.md).
+- **[Documentation Map](docs/README.md)**: Index of all available guides.
+- **Core Guides**: [Overview](docs/EN/overview.md) and [Architecture](docs/EN/architecture.md).
+- **Technical Info**: [Data Flows](docs/EN/data-flow.md), [Local Development](docs/EN/local-development.md), and [Configuration](docs/EN/configuration.md).
+- **Operations**: [Production Setup](docs/EN/deployment/setup.md), [Operations](docs/EN/operations.md), and [Backup/Restore](docs/EN/deployment/backup-restore.md).
 
 ## How to Use
 
-### 1. Initialize Your Repository
-Select the templates that fit your project's complexity:
-- **Small Project**: Start with `README_TEMPLATE.md`.
-- **Large Project**: Copy the entire `docs/` directory into your project to use the full suite.
+### 1. Setup
+Copy the files you need into your repository:
+- Use `README_TEMPLATE.md` (or the VN version) for small projects.
+- Copy the entire `docs/` folder for larger projects.
 
-### 2. Manual Fill (Human)
-Copy the template content and replace all `[brackets]` with your project details. Follow the [MANDATORY] and [OPTIONAL] tags provided in the instruction blocks.
+### 2. Manual Update
+Fill in all `[bracketed]` sections with your project details and delete any instructional notes (text in *italics*).
 
-### 3. Automated Fill (AI Agent)
-If you are using an AI-integrated development environment or agent:
-1.  Provide the agent with the template file(s) you wish to populate.
-2.  Provide the agent with access to your codebase.
-3.  Instruct the agent: *"Follow the Agent Execution Protocol in these templates to generate professional documentation for my current project."*
+### 3. Automated Update (AI Agent)
+If using an AI agent:
+1. Provide the agent with the template and access to your codebase.
+2. Instruct the agent: *"Follow the Agent Execution Protocol in this template to generate documentation for my project."*
 
 ---
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions for improving the templates or adding more language versions, feel free to open a Pull Request.
+Feel free to open a Pull Request for improvements or new language versions.
 
 ## Acknowledgement
 
-Inspired by the structured documentation found in NVIDIA AI Blueprints and enterprise software projects.
+Inspired by the structured documentation in professional open-source projects.
 
 ## License
 
-This project is currently unlicensed. You are free to use the templates for your own projects, but the repository itself does not yet have a formal license.
+This project is currently unlicensed. You are free to use these templates for your own work.
 
 ---
 
