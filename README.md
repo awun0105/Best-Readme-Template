@@ -1,5 +1,7 @@
 # Best-Readme-Template
 
+[Tiếng Việt: README_VN.md](README_VN.md)
+
 **A collection of structured README and documentation templates designed for readability and automated filling by AI.**
 
 This repository provides standardized, icon-free templates inspired by professional repository structures. They help maintain consistency across projects while supporting automated generation via AI agents.
