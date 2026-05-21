@@ -1,36 +1,40 @@
 <!-- 
-BẢN MẪU THIẾT LẬP PRODUCTION
-============================
-Trọng tâm: Hướng dẫn từng bước để triển khai môi trường thực tế.
+BẢN MẪU THIẾT LẬP PRODUCTION (PHỔ QUÁT)
+======================================
+Trọng tâm: Hướng dẫn chuẩn từng bước cho bất kỳ quy trình triển khai thực tế nào.
 
 GIAO THỨC THỰC THI CHO AGENT:
-1. Quét các cấu hình triển khai (Docker Compose, Helm, K8s).
-2. Điền dữ liệu vào dấu ngoặc vuông [ ].
+1. Quét các tệp tự động hóa build và triển khai của dự án.
+2. Giải quyết các dấu ngoặc vuông [ ] bằng các nhãn nền tảng và công cụ liên quan.
 3. Làm sạch các ghi chú hướng dẫn.
 -->
 
 # Thiết lập Production
 
-Hướng dẫn này chi tiết các bước để triển khai **[Tên Dự án]** trong môi trường vận hành thực tế.
+Hướng dẫn này cung cấp một quy trình chuẩn để triển khai **[Tên Dự án]** vào môi trường vận hành thực tế.
 
-## 1. Chuẩn bị Môi trường
-*Liệt kê yêu cầu hệ điều hành, trình chạy container và cấu hình mạng.*
+## 1. Yêu cầu Hệ thống
+- **Runtime**: [ví dụ: Docker, Node.js, Python runtime]
+- **Phần cứng**: [Liên kết đến Yêu cầu Phần cứng trong README]
+- **Mạng**: [ví dụ: Mở cổng cho HTTP/HTTPS, cấu hình VPC]
 
-## 2. Thiết lập Hạ tầng
-*Hướng dẫn thiết lập các phụ thuộc bên ngoài (cơ sở dữ liệu, lưu trữ đối tượng).*
+## 2. Chuẩn bị Hạ tầng
+*Hướng dẫn thiết lập các máy chủ cần thiết, cơ sở dữ liệu được quản lý, hoặc các tài nguyên đám mây.*
 
-## 3. Cấu hình
-1.  Sao chép `.env.production.example` thành `.env.production`.
-2.  Cập nhật tất cả các biến nhạy cảm (secrets, keys).
+## 3. Cấu hình & Bí mật (Secrets)
+1.  Khởi tạo tệp môi trường production (`[ví dụ: .env.production]`).
+2.  Điền tất cả các thông tin xác thực nhạy cảm (API keys, mật khẩu DB) vào trình quản lý bí mật bảo mật hoặc tệp môi trường.
 
-## 4. Triển khai
+## 4. Thực thi / Triển khai
+*Hướng dẫn xây dựng và khởi chạy ứng dụng.*
+
 ```bash
-# Ví dụ cho Docker Compose
-docker-compose -f docker-compose.prod.yml up -d
+# Ví dụ lệnh triển khai
+[ví dụ: docker-compose up -d]
 ```
 
-## 5. Xác minh sau Triển khai
-*Các bước đảm bảo dịch vụ hoạt động bình thường và có thể truy cập.*
+## 5. Kiểm tra Sức khỏe & Xác minh
+*Các bước chi tiết để xác minh hệ thống hoạt động hoàn hảo sau khi triển khai.*
 
 ---
 

@@ -1,38 +1,39 @@
 <!-- 
-CONFIGURATION TEMPLATE
-======================
+CONFIGURATION TEMPLATE (UNIVERSAL)
+==================================
 Focus: Detailing environment variables, settings, and secrets management.
 
 AGENT EXECUTION PROTOCOL:
-1. Scan .env.example, settings files, and config classes.
-2. Resolve [brackets].
+1. Scan project config files (.env, settings.py, config.yaml, etc.).
+2. Resolve [brackets] with applicable project variable groups.
 3. Clean up instructional notes.
 -->
 
 # Configuration
 
-This document covers the configuration options for **[Project Title / Name]**, including environment variables and specific setting groups.
+This document covers the configuration options for **[Project Title / Name]**, providing a map of environment variables and internal settings.
 
-## Environment Files
+## Configuration Files
 
-- `.env`: Local development settings.
-- `.env.production`: Production-grade configurations.
+- **Development**: [e.g., .env]
+- **Production**: [e.g., .env.production or Kubernetes Secrets]
 
 ## Settings Categories
 
-### 1. Core Service Settings
+### 1. Application Core
 | Variable | Description | Default |
 |---|---|---|
-| `[VAR_NAME]` | [Description] | [Value] |
+| `[APP_VAR_1]` | [Description] | [Default Value] |
+| `[APP_VAR_2]` | [Description] | [Default Value] |
 
-### 2. Database & Storage
-*Details for connection strings, endpoints, and credentials.*
+### 2. Databases & External Services
+*Details for connection strings, endpoints, and credentials for all stateful services.*
 
-### 3. API & Security
-*Settings for keys, authentication tokens, and CORS.*
+### 3. Security & Authentication
+*Settings for API keys, encryption secrets, tokens, and CORS policies.*
 
 ### 4. Logging & Observability
-*Log levels, metrics intervals, and tracing endpoints.*
+*Log levels, metrics collection intervals, and telemetry endpoints.*
 
 ---
 

@@ -1,38 +1,39 @@
 <!-- 
-BẢN MẪU CẤU HÌNH
-================
+BẢN MẪU CẤU HÌNH (PHỔ QUÁT)
+==========================
 Trọng tâm: Chi tiết về các biến môi trường, thiết lập và quản lý bí mật.
 
 GIAO THỨC THỰC THI CHO AGENT:
-1. Quét tệp .env.example, các tệp thiết lập và lớp cấu hình.
-2. Điền dữ liệu vào dấu ngoặc vuông [ ].
+1. Quét các tệp cấu hình dự án (.env, settings.py, config.yaml, v.v.).
+2. Giải quyết các dấu ngoặc vuông [ ] bằng các nhóm biến dự án phù hợp.
 3. Làm sạch các ghi chú hướng dẫn.
 -->
 
 # Cấu hình
 
-Tài liệu này bao gồm các tùy chọn cấu hình cho **[Tên Dự án]**, bao gồm các biến môi trường và các nhóm thiết lập cụ thể.
+Tài liệu này bao gồm các tùy chọn cấu hình cho **[Tên Dự án]**, cung cấp bản đồ các biến môi trường và thiết lập nội bộ.
 
-## Các tệp môi trường
+## Các tệp cấu hình
 
-- `.env`: Thiết lập cho môi trường phát triển cục bộ.
-- `.env.production`: Cấu hình cho môi trường triển khai (production).
+- **Phát triển**: [ví dụ: .env]
+- **Production**: [ví dụ: .env.production hoặc Kubernetes Secrets]
 
 ## Danh mục thiết lập
 
-### 1. Thiết lập Dịch vụ Cốt lõi
+### 1. Cốt lõi Ứng dụng
 | Biến | Mô tả | Mặc định |
 |---|---|---|
-| `[TÊN_BIẾN]` | [Mô tả] | [Giá trị] |
+| `[APP_VAR_1]` | [Mô tả] | [Giá trị mặc định] |
+| `[APP_VAR_2]` | [Mô tả] | [Giá trị mặc định] |
 
-### 2. Cơ sở dữ liệu & Lưu trữ
-*Chi tiết về chuỗi kết nối, endpoint và thông tin xác thực.*
+### 2. Cơ sở dữ liệu & Dịch vụ bên ngoài
+*Chi tiết về chuỗi kết nối, endpoint và thông tin xác thực cho tất cả các dịch vụ có trạng thái.*
 
-### 3. API & Bảo mật
-*Thiết lập cho các key, mã xác thực và CORS.*
+### 3. Bảo mật & Xác thực
+*Thiết lập cho API keys, bí mật mã hóa, tokens và chính sách CORS.*
 
 ### 4. Ghi nhật ký (Logging) & Giám sát
-*Cấp độ log, khoảng thời gian thu thập số liệu và các endpoint truy vết.*
+*Cấp độ log, khoảng thời gian thu thập số liệu và các endpoint đo lường.*
 
 ---
 

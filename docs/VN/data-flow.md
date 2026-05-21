@@ -1,43 +1,44 @@
 <!-- 
-BẢN MẪU LUỒNG DỮ LIỆU
-=====================
-Trọng tâm: Trực quan hóa và mô tả cách dữ liệu di chuyển trong hệ thống.
+BẢN MẪU LUỒNG DỮ LIỆU (PHỔ QUÁT)
+===============================
+Trọng tâm: Trực quan hóa và mô tả cách dữ liệu di chuyển trong bất kỳ hệ thống phần mềm nào.
 
 GIAO THỨC THỰC THI CHO AGENT:
-1. Xác định các giai đoạn đầu vào, xử lý và lưu trữ.
-2. Điền dữ liệu vào dấu ngoặc vuông [ ].
+1. Ánh xạ hành trình dữ liệu của dự án từ lúc bắt đầu đến khi lưu trữ.
+2. Giải quyết các dấu ngoặc vuông [ ] bằng các danh mục dịch vụ chung hoặc cụ thể.
 3. Làm sạch các ghi chú hướng dẫn.
 -->
 
 # Luồng dữ liệu
 
-Tài liệu này chi tiết các lộ trình dữ liệu quan trọng của **[Tên Dự án]**, bao gồm tìm kiếm, lập chỉ mục, số liệu và lưu trữ.
+Tài liệu này chi tiết các lộ trình dữ liệu quan trọng của **[Tên Dự án]**, minh họa cách thông tin được xử lý, lưu trữ và giám sát.
 
-## 1. Luồng Tìm kiếm
-*Mô tả lộ trình từ truy vấn của người dùng đến kết quả trả về.*
+## 1. Luồng Yêu cầu/Phản hồi Chính
+*Mô tả hành trình từ đầu đến cuối của một yêu cầu tiêu chuẩn từ người dùng.*
 
 ```mermaid
 sequenceDiagram
-    participant User
-    participant API
-    participant SearchService
-    participant Database
-    User->>API: Gửi truy vấn
-    API->>SearchService: Xử lý yêu cầu
-    SearchService->>Database: Truy vấn dữ liệu
-    Database-->>SearchService: Trả về kết quả
-    SearchService-->>API: Định dạng kết quả
-    API-->>User: Phản hồi cuối cùng
+    participant Client as [Khách hàng/Người dùng]
+    participant Entry as [API/Điểm truy cập]
+    participant Logic as [Logic cốt lõi/Dịch vụ]
+    participant Data as [Cơ sở dữ liệu/Lưu trữ]
+    
+    Client->>Entry: [Hành động/Yêu cầu]
+    Entry->>Logic: [Xử lý/Biến đổi]
+    Logic->>Data: [Truy vấn/Lưu giữ]
+    Data-->>Logic: [Dữ liệu/Trạng thái]
+    Logic-->>Entry: [Kết quả định dạng]
+    Entry-->>Client: [Phản hồi cuối cùng]
 ```
 
-## 2. Luồng Lập chỉ mục / Nạp dữ liệu
-*Mô tả cách dữ liệu mới được xử lý và lưu trữ vào hệ thống.*
+## 2. Luồng Xử lý Nền / Bất đồng bộ
+*Mô tả cách các tác vụ được xử lý bên ngoài chu trình yêu cầu chính (ví dụ: workers, hàng đợi).*
 
-## 3. Luồng Số liệu và Giám sát
-*Mô tả cách các số liệu hệ thống được thu thập và hiển thị (ví dụ: Prometheus).*
+## 3. Luồng Đo lường và Giám sát
+*Giải thích cách các số liệu hệ thống (ví dụ: sức khỏe, hiệu năng) được thu thập và hiển thị.*
 
-## 4. Luồng Lưu trữ
-*Mô tả nơi lưu trữ các loại dữ liệu khác nhau (logs, cơ sở dữ liệu, tệp tin).*
+## 4. Kiến trúc Lưu trữ
+*Xác định vai trò của các lớp lưu trữ khác nhau (ví dụ: Quan hệ, Key-Value, Lưu trữ đối tượng).*
 
 ---
 

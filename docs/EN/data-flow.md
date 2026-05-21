@@ -1,43 +1,44 @@
 <!-- 
-DATA FLOWS TEMPLATE
-===================
-Focus: Visualizing and describing how data moves through the system.
+DATA FLOWS TEMPLATE (UNIVERSAL)
+===============================
+Focus: Visualizing and describing how data moves through any software system.
 
 AGENT EXECUTION PROTOCOL:
-1. Identify input, processing, and storage stages.
-2. Resolve [brackets].
+1. Map the project's data journey from entry to persistence.
+2. Resolve [brackets] with generic or specific service categories.
 3. Clean up instructional notes.
 -->
 
 # Data Flows
 
-This document details the critical data paths for **[Project Title / Name]**, covering search, indexing, metrics, and storage.
+This document details the critical data paths for **[Project Title / Name]**, illustrating how information is processed, stored, and monitored.
 
-## 1. Search Flow
-*Describe the path from a user query to the returned result.*
+## 1. Primary Request/Response Flow
+*Describe the end-to-end journey of a standard user request.*
 
 ```mermaid
 sequenceDiagram
-    participant User
-    participant API
-    participant SearchService
-    participant Database
-    User->>API: Submit Query
-    API->>SearchService: Process Request
-    SearchService->>Database: Query Data
-    Database-->>SearchService: Results
-    SearchService-->>API: Formatted Results
-    API-->>User: Final Response
+    participant Client as [Client/User]
+    participant Entry as [API/Entry Point]
+    participant Logic as [Core Logic/Service]
+    participant Data as [Database/Storage]
+    
+    Client->>Entry: [Action/Request]
+    Entry->>Logic: [Process/Transform]
+    Logic->>Data: [Query/Persist]
+    Data-->>Logic: [Data/Status]
+    Logic-->>Entry: [Formatted Result]
+    Entry-->>Client: [Final Response]
 ```
 
-## 2. Indexing / Ingestion Flow
-*Describe how new data is processed and stored in the system.*
+## 2. Background / Async Processing Flow
+*Describe how tasks are handled outside the main request cycle (e.g., workers, queues).*
 
-## 3. Metrics and Monitoring Flow
-*Describe how system metrics are collected and exposed (e.g., Prometheus).*
+## 3. Telemetry and Monitoring Flow
+*Explain how system metrics (e.g., health, performance) are collected and exposed.*
 
-## 4. Storage Flow
-*Describe where different types of data (logs, database, blobs) reside.*
+## 4. Storage Architecture
+*Define the roles of different storage layers (e.g., Relational, Key-Value, Object Storage).*
 
 ---
 

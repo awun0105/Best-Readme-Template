@@ -1,94 +1,60 @@
 <!-- 
-BẢN MẪU VẬN HÀNH
-================
-Trọng tâm: Trạng thái hệ thống, số liệu, logs, các tác vụ nền và quản lý sự cố.
+BẢN MẪU VẬN HÀNH (PHỔ QUÁT)
+==========================
+Trọng tâm: Sức khỏe hệ thống, số liệu, nhật ký và quy trình bảo trì.
 
 GIAO THỨC THỰC THI CHO AGENT:
-1. Xác định các endpoint sức khỏe, định dạng log và job backend.
-2. Điền dữ liệu vào dấu ngoặc vuông [ ].
+1. Quét dự án để tìm các endpoint giám sát và cấu hình ghi nhật ký.
+2. Giải quyết các dấu ngoặc vuông [ ] bằng các giao diện vận hành cụ thể của dự án.
 3. Làm sạch các ghi chú hướng dẫn.
 -->
 
 # Hướng dẫn Vận hành
 
-Tài liệu này giải thích cách kiểm tra và vận hành **[Tên Dự án]** sau khi hệ thống đã khởi chạy.
+Tài liệu này giải thích cách giám sát, kiểm tra và bảo trì **[Tên Dự án]** trong môi trường vận hành thực tế.
 
-## Giám sát Sức khỏe (Health)
+## Giám sát Sức khỏe
 
-Kiểm tra trạng thái hệ thống thông qua API:
-
-```bash
-curl http://localhost:[CỔNG]/health
-```
-
-Phản hồi sức khỏe thường bao gồm:
-- `status`: Trạng thái tổng quát của API.
-- **[Trạng thái Thành phần 1]**: [ví dụ: Kết nối Cơ sở dữ liệu].
-- **[Trạng thái Thành phần 2]**: [ví dụ: Trạng thái nạp Mô hình].
-
-*Lưu ý: [Ghi chú tùy chọn về cơ chế lazy-loading hoặc các hành vi khởi động đặc thù].*
-
-## Số liệu (Metrics)
-
-Cung cấp các số liệu định dạng Prometheus để giám sát:
+Truy cập giao diện kiểm tra sức khỏe để xác minh trạng thái hệ thống:
 
 ```bash
-curl http://localhost:[CỔNG]/metrics
+curl http://[HOST]:[CỔNG]/[đường-dẫn-health]
 ```
 
-**Các nhóm số liệu quan trọng:**
+**Các hạng mục kiểm tra:**
+- [ví dụ: Kết nối cơ sở dữ liệu]
+- [ví dụ: Tính khả dụng của dịch vụ]
 
-| Số liệu | Ý nghĩa |
-|---|---|
-| `[Tên Số liệu 1]` | [Mô tả về những gì đang được đo lường/đếm] |
-| `[Tên Số liệu 2]` | [Mô tả] |
+## Số liệu Hệ thống (Metrics)
 
-*Lưu ý về tính khả dụng: Endpoint `/metrics` thường yêu cầu thiết lập `[TÊN_BIẾN_MÔI_TRƯỜNG]=true` để hoạt động.*
+Hiển thị và thu thập các số liệu hiệu năng (ví dụ: qua Prometheus):
 
-## Ghi nhật ký (Logging)
-
-- **Phát triển cục bộ**: Thường sử dụng định dạng `text` để dễ đọc.
-- **Triển khai Production**: Khuyến nghị sử dụng định dạng `json` để phục vụ việc cấu trúc hóa và tập hợp log.
-
-**Truy vết yêu cầu (Request Tracking):**
-Mỗi yêu cầu được gán một ID duy nhất. Hãy tìm header `X-Request-ID` trong phản hồi để khớp các cuộc gọi API với nhật ký hệ thống tại backend.
-
-## Các tác vụ nền (Background Jobs)
-
-*Nếu dự án sử dụng hàng đợi tác vụ (ví dụ: Redis/RQ, Celery, Cron), hãy tài liệu hóa cách quản lý job tại đây.*
-
-### 1. Khởi tạo một tác vụ
 ```bash
-curl -X POST http://localhost:[CỔNG]/api/v1/[đường-dẫn-job] \
-  -H "X-API-Key: $API_KEY" \
-  -d '{"param": "value"}'
+curl http://[HOST]:[CỔNG]/[đường-dẫn-metrics]
 ```
 
-### 2. Giám sát trạng thái
-```bash
-curl -H "X-API-Key: $API_KEY" \
-  http://localhost:[CỔNG]/api/v1/[đường-dẫn-job]/<id_job>
-```
+**Các danh mục số liệu chính:**
+- **Lưu lượng**: [ví dụ: Số lượng yêu cầu, thông lượng]
+- **Độ trễ**: [ví dụ: Biểu đồ thời gian phản hồi]
+- **Lỗi**: [ví dụ: Số lượng lỗi 4xx/5xx]
 
-**Ý nghĩa các trạng thái:**
-- `queued`: Đã tiếp nhận, đang chờ worker.
-- `running`: Đang được xử lý.
-- `completed`: Thành công.
-- `failed`: Thất bại; kiểm tra log để biết chi tiết lỗi.
+## Ghi nhật ký & Khả năng giám sát
 
-## Các sự cố thường gặp / Xử lý sự cố
+Mô tả chiến lược ghi nhật ký và cách truy cập nhật ký hệ thống.
 
-### API trả về lỗi 401 (Unauthorized)
-**Nguyên nhân**: API key bị thiếu hoặc không chính xác.
-**Kiểm tra**: Đảm bảo biến `[TÊN_BIẾN_MÔI_VAR]` khớp với key được gửi trong header.
+- **Định dạng Log chuẩn**: [ví dụ: JSON cấu trúc]
+- **Phương thức truy cập**: [ví dụ: `docker logs` hoặc một hệ thống tập hợp log trung tâm]
 
-### Tác vụ bị kẹt ở trạng thái Queued
-**Nguyên nhân**: Tiến trình worker chưa chạy hoặc kết nối sai hàng đợi/cơ sở dữ liệu.
-**Xử lý**: Kiểm tra trạng thái container của worker và cấu hình `[TÊN_BIẾN_MÔI_TRƯỜNG]`.
+## Bảo trì Định kỳ
 
-### [Tên vấn đề 3, ví dụ: Phản hồi chậm]
-**Nguyên nhân**: [Mô tả].
-**Xử lý**: [Các bước gỡ lỗi].
+*Hướng dẫn cho các tác vụ theo lịch trình, dọn dẹp dữ liệu hoặc cập nhật hệ thống.*
+
+## Xử lý Sự cố (Cơ bản)
+
+| Sự cố | Kiểm tra ban đầu | Hành động |
+|---|---|---|
+| **[Vấn đề 1]** | [Bước xác minh] | [Bước giải quyết] |
+| **[Vấn đề 2]** | [Bước xác minh] | [Bước giải quyết] |
 
 ---
 

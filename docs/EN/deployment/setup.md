@@ -1,36 +1,40 @@
 <!-- 
-PRODUCTION SETUP TEMPLATE
-=========================
-Focus: Step-by-step instructions for production-grade deployment.
+PRODUCTION SETUP TEMPLATE (UNIVERSAL)
+====================================
+Focus: Standard step-by-step instructions for any production deployment.
 
 AGENT EXECUTION PROTOCOL:
-1. Scan deployment manifests (Docker Compose, Helm, K8s).
-2. Resolve [brackets].
+1. Scan project's build and deployment automation files.
+2. Resolve [brackets] with the relevant platform and tool labels.
 3. Clean up instructional notes.
 -->
 
 # Production Setup
 
-This guide details the steps to deploy **[Project Title / Name]** in a production environment.
+This guide provides a standardized procedure for deploying **[Project Title / Name]** into a production-grade environment.
 
-## 1. Environment Preparation
-*List OS requirements, container runtime, and network configurations.*
+## 1. System Requirements
+- **Runtime**: [e.g., Docker, Node.js, Python runtime]
+- **Hardware**: [Link to Hardware Requirements in README]
+- **Network**: [e.g., Open ports for HTTP/HTTPS, VPC configuration]
 
-## 2. Infrastructure Setup
-*Instructions for setting up external dependencies (databases, object storage).*
+## 2. Infrastructure Provisioning
+*Instructions for setting up the necessary servers, managed databases, or cloud resources.*
 
-## 3. Configuration
-1.  Copy `.env.production.example` to `.env.production`.
-2.  Update all sensitive variables (secrets, keys).
+## 3. Configuration & Secrets
+1.  Initialize the production environment file (`[e.g., .env.production]`).
+2.  Populate all sensitive credentials (API keys, DB passwords) into a secure secret manager or the environment file.
 
-## 4. Deployment
+## 4. Execution / Deployment
+*Instructions for building and starting the application.*
+
 ```bash
-# Example for Docker Compose
-docker-compose -f docker-compose.prod.yml up -d
+# Example deployment command
+[e.g., docker-compose up -d]
 ```
 
-## 5. Post-Deployment Verification
-*List steps to ensure the service is healthy and reachable.*
+## 5. Health & Verification
+*Detailed steps to verify that the system is fully operational post-deployment.*
 
 ---
 
