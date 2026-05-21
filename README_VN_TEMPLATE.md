@@ -218,13 +218,13 @@ Tài liệu [ví dụ: Tiếng Anh] tại `docs/EN/` là bộ tài liệu chuẩ
 
 Tài liệu chính:
 
-- [Tổng quan](docs/EN/overview.md): Phạm vi dự án và ranh giới dịch vụ.
-- [Kiến trúc](docs/EN/architecture.md): Các thành phần và ý tưởng thực thi.
-- [Luồng dữ liệu](docs/EN/data-flow.md): Luồng tìm kiếm, lập chỉ mục, số liệu và lưu trữ.
-- [Cấu hình](docs/EN/configuration.md): Chi tiết về `.env`, `.env.production` và các thiết lập.
-- [Vận hành](docs/EN/operations.md): Trạng thái hệ thống, logs, jobs và xử lý sự cố.
-- [Hướng dẫn triển khai](docs/EN/deployment/setup.md): Các bước thiết lập môi trường production.
-- [Sao lưu và phục hồi](docs/EN/deployment/backup-restore.md): Các nhóm trạng thái và quy trình kiểm tra phục hồi.
+- [Tổng quan](docs/VN/overview.md): Phạm vi dự án và ranh giới dịch vụ.
+- [Kiến trúc](docs/VN/architecture.md): Các thành phần và ý tưởng thực thi.
+- [Luồng dữ liệu](docs/VN/data-flow.md): Luồng tìm kiếm, lập chỉ mục, số liệu và lưu trữ.
+- [Cấu hình](docs/VN/configuration.md): Chi tiết về `.env`, `.env.production` và các thiết lập.
+- [Vận hành](docs/VN/operations.md): Trạng thái hệ thống, logs, jobs và xử lý sự cố.
+- [Hướng dẫn triển khai](docs/VN/deployment/setup.md): Các bước thiết lập môi trường production.
+- [Sao lưu và phục hồi](docs/VN/deployment/backup-restore.md): Các nhóm trạng thái và quy trình kiểm tra phục hồi.
 
 *Lưu ý: [Ghi chú kỹ thuật tùy chọn về mã nguồn chính và mã nguồn cũ].*
 
