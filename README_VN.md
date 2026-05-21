@@ -54,6 +54,8 @@ II. DÀNH CHO LẬP TRÌNH VIÊN:
 - [Tài liệu hướng dẫn](#tài-liệu-hướng-dẫn)
 - [Đóng góp](#đóng-góp)
 - [Cân nhắc bảo mật](#cân-nhắc-bảo-mật)
+- [Lời cảm ơn](#lời-cảm-ơn)
+- [Liên hệ](#liên-hệ)
 - [Bản quyền](#bản-quyền)
 
 ---
@@ -253,6 +255,24 @@ Vui lòng đảm bảo đã chạy kiểm tra lỗi (linting) và các bài test
 
 - Đảm bảo API key không bao giờ được commit lên hệ thống quản lý phiên bản.
 - [Chi tiết về các rào cản bảo mật hoặc tính năng sandbox cụ thể].
+
+## Lời cảm ơn
+
+**[TÙY CHỌN]**
+*Ghi nhận các cá nhân, tổ chức hoặc nguồn lực đã truyền cảm hứng hoặc đóng góp cho dự án này.*
+
+- [Tên nguồn cảm hứng / Liên kết]: Vì các ý tưởng kiến trúc cốt lõi.
+- [Tên công cụ / Thư viện]: Vì các chức năng thiết yếu đã cung cấp.
+- [Tên người đóng góp]: Vì những phản hồi và gợi ý quý báu.
+
+## Liên hệ
+
+**[TÙY CHỌN / KHUYẾN NGHỊ]**
+*Cung cấp phương thức để người dùng và cộng tác viên liên hệ với người quản trị.*
+
+- Trưởng dự án: [Tên / Email / LinkedIn]
+- Hỗ trợ: [Email / Liên kết Discord]
+- Trang web: [URL dự án của bạn]
 
 ## Bản quyền
 

@@ -57,6 +57,8 @@ Instructions for use:
 - [Documentation](#documentation)
 - [Contributing](#contributing)
 - [Security Considerations](#security-considerations)
+- [Acknowledgement](#acknowledgement)
+- [Contact](#contact)
 - [License](#license)
 
 ---
@@ -251,6 +253,24 @@ Please ensure you run linting and tests before submitting.
 
 - Ensure API keys are never committed to version control.
 - [Detail any specific guardrails or sandbox features].
+
+## Acknowledgement
+
+**[OPTIONAL]**
+*Credit any individuals, organizations, or resources that inspired or contributed to this project.*
+
+- [Inspiration Name / Link]: For the core architectural concepts.
+- [Tool / Library Name]: For providing essential functionality.
+- [Contributor Name]: For valuable feedback and suggestions.
+
+## Contact
+
+**[OPTIONAL / RECOMMENDED]**
+*Provide ways for users and collaborators to reach the maintainers.*
+
+- Project Lead: [Name / Email / LinkedIn]
+- Support: [Email / Discord Link]
+- Website: [Your Project URL]
 
 ## License
 
